@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Time Luxettipet</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    /* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgb(120, 232, 76); /* Dark brown */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgb(120, 232, 76); /* Light brown */
+}
+
+/* Header */
+header {
+  background-color: #ce441a; /* Dark brown */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Menu */
+.menu {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.category {
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.category h3 {
+  background-color: #ce441a; /* Light brown */
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category ul li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.category ul li:last-child {
+  border-bottom: none;
+}
+
+.category ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.category ul li::before {
+  /* content: "•"; */
+  color: rgb(120, 232, 76); /* Light brown */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(120, 232, 76); /* Dark brown */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .footer p a {
+    color: #55A8DF;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .category h3 {
+    font-size: 1.4rem;
+  }
+
+  .category ul li {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+    <!-- Header -->
+  <header>
+    <h1>Tea Time Luxettipet</h1>
+    <p>Your perfect sip of happiness!</p>
+  </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#teas">Teas</a></li>
+      <li><a href="#coolers">Coolers</a></li>
+      <li><a href="#flavored-milks">Flavored Milks</a></li>
+      <li><a href="#milkshakes">Milkshakes</a></li>
+      <li><a href="#premium-shakes">Premium Shakes</a></li>
+      <li><a href="#snacks">Snacks</a></li>
+      <li><a href="#tea-flask">Tea Flask</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menu -->
+  <section class="menu">
+    <h2>Menu</h2>
+
+    <!-- Teas -->
+    <div id="teas" class="category">
+      <h3>Tea's</h3>
+      <ul>
+        <li>Dum Tea - Rs. 12</li>
+        <li>Ginger Tea - Rs. 15</li>
+        <li>Masala Tea - Rs. 15</li>
+        <li>Lemon Tea - Rs. 15</li>
+        <li>Ginger Lemon Tea - Rs. 15</li>
+        <li>Black Tea - Rs. 15</li>
+        <li>Kashmiri Tea - Rs. 20</li>
+        <li>Kullad Tea - Rs. 20</li>
+        <li>Badam Milk - Rs. 20</li>
+        <li>Coffee - Rs. 20</li>
+        <li>Boost - Rs. 20</li>
+        <li>Green Tea - Rs. 25</li>
+      </ul>
+    </div>
+
+    <!-- Coolers -->
+    <div id="coolers" class="category">
+      <h3>Coolers</h3>
+      <ul>
+        <li>Lime Mint Cooler - Rs. 45</li>
+        <li>Ginger Lemon Ice Tea - Rs. 35</li>
+        <li>Water Melon - Rs. 45</li>
+        <li>Fizi Mojito - Rs. 55</li>
+        <li>Matka Lassi - Rs. 45</li>
+        <li>Cold Coffee - Rs. 49</li>
+      </ul>
+    </div>
+
+    <!-- Flavored Milks -->
+    <div id="flavored-milks" class="category">
+      <h3>Flavored Milks</h3>
+      <ul>
+        <li>Rose Milk - Rs. 45</li>
+        <li>Chilled Badam Milk - Rs. 45</li>
+      </ul>
+    </div>
+
+    <!-- Milkshakes -->
+    <div id="milkshakes" class="category">
+      <h3>Milkshakes</h3>
+      <ul>
+        <li>Chocolate Shake - Rs. 49</li>
+        <li>Strawberry Shake - Rs. 49</li>
+        <li>Vennila Shake - Rs. 49</li>
+        <li>Oreo Milkshake - Rs. 49</li>
+        <li>Mango Milkshake - Rs. 49</li>
+      </ul>
+    </div>
+
+    <!-- Premium Shakes -->
+    <div id="premium-shakes" class="category">
+      <h3>Premium Shakes</h3>
+      <ul>
+        <li>Mulberry Shake - Rs. 99</li>
+        <li>Pista Shake - Rs. 99</li>
+        <li>Californian Shake - Rs. 99</li>
+        <li>Italian Shake - Rs. 99</li>
+        <li>Royal Dates - Rs. 99</li>
+        <li>Cranberry Shake - Rs. 99</li>
+        <li>Ban the Banana - Rs. 99</li>
+        <li>Star Blast Shake - Rs. 99</li>
+      </ul>
+    </div>
+
+    <!-- Snacks -->
+    <div id="snacks" class="category">
+      <h3>Snacks</h3>
+      <ul>
+        <li>Osmania Biscuits (1pc) - Rs. 5</li>
+        <li>Samosa (3pcs) - Rs. 20</li>
+      </ul>
+    </div>
+
+    <!-- Tea Flask -->
+    <div id="tea-flask" class="category">
+      <h3>Tea Flask</h3>
+      <ul>
+        <li>Tea Flask - Rs. 99</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2021 Tea Time Luxettipet. All rights reserved.</p>
+    <p>Developed by <a href="https://www.linkedin.com/in/pavan-mulkalla/" target="_blank">Mulkalla Pavan <i
+        class="fab fa-linkedin"></i></span></a></p>
+  </footer>
+</body>
+</html>
